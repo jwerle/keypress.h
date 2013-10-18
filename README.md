@@ -47,6 +47,11 @@ on_keypress (int ch, key_t *key) {
 }
 ```
 
+## todo
+
+- handle escape key
+- async?
+
 ## license
 
 MIT
