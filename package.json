@@ -1,0 +1,9 @@
+{
+  "name": "keypress.h",
+  "version": "0.0.1",
+  "repo": "jwerle/keypress.h",
+  "description": "Listen for key press from stdin",
+  "keywords": ["key", "keypress"],
+  "license": "MIT",
+  "src": ["keypress.h"]
+}
