@@ -5,5 +5,5 @@
   "description": "Listen for key press from stdin",
   "keywords": ["key", "keypress"],
   "license": "MIT",
-  "src": ["keypress.h"]
+  "src": ["keypress.h", "usleep.h", "getch.h"]
 }
