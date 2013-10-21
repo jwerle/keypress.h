@@ -2,7 +2,7 @@
 #include "keypress.h"
 
 static int
-on_keypress (int ch, key_t *key);
+on_keypress (int ch, keypress_t *key);
 
 int
 main (void) {
@@ -11,7 +11,7 @@ main (void) {
 }
 
 static int
-on_keypress (int ch, key_t *key) {
+on_keypress (int ch, keypress_t *key) {
   if (ch == KEY_QUIT) {
     return -1;
   }

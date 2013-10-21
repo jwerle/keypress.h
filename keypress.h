@@ -19,16 +19,16 @@ typedef struct key {
 //  int meta;
 //  int shift;
 //  int arrow;
-} key_t;
+} keypress_t;
 
-typedef int (*keypress_cb)(int ch, key_t *key);
+typedef int (*keypress_cb)(int ch, keypress_t *key);
 
 void
 keypress_listen (keypress_cb cb);
 
 
 static void
-key_reset (key_t *key);
+key_reset (keypress_t *key);
 
 
 // IMPLEMENTATION
@@ -40,7 +40,7 @@ keypress_listen (keypress_cb cb) {
   int sequence[3];
   int i = 0;
   int rc = 0;
-  key_t key;
+  keypress_t key;
 
   key_reset(&key);
 
@@ -109,7 +109,7 @@ keypress_listen (keypress_cb cb) {
 }
 
 static void
-key_reset (key_t *key) {
+key_reset (keypress_t *key) {
   key->name = NULL;
 //  key->meta = 0;
 //  key->shift = 0;
