@@ -1,6 +1,5 @@
-
-#ifndef __KEYPRESS_H__
-#define __KEYPRESS_H__ 1
+#ifndef KEYPRESS_H
+#define KEYPRESS_H 1
 
 #include <stdio.h>
 #include <stdlib.h>
